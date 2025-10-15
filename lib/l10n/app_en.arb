@@ -1,0 +1,16 @@
+{
+  "@@locale": "en",
+  "appTitle": "YouTube + Live Camera",
+  "enableCamera": "Enable Camera",
+  "hideCamera": "Hide Camera",
+  "showCamera": "Show Camera",
+  "noCameraDetected": "No available camera detected",
+  "cameraPermissionDenied": "Camera permission denied",
+  "cameraPermissionNeeded": "Camera Permission Needed",
+  "cameraPermissionDescription": "Camera access has been permanently denied.\n\nPlease enable it manually in Settings → Privacy → Camera.",
+  "cancel": "Cancel",
+  "openSettings": "Open Settings",
+  "cameraInitError": "Camera initialization error:",
+  "noSecondaryCamera": "No secondary camera found",
+  "switchCam": "Swap Camera"
+}

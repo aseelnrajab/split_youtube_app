@@ -1,0 +1,16 @@
+{
+  "@@locale": "ar",
+  "appTitle": "يوتيوب + كاميرا مباشرة",
+  "enableCamera": "تشغيل الكاميرا",
+  "hideCamera": "إخفاء الكاميرا",
+  "showCamera": "إظهار الكاميرا",
+  "noCameraDetected": "لم يتم العثور على كاميرا متاحة",
+  "cameraPermissionDenied": "تم رفض إذن الكاميرا",
+  "cameraPermissionNeeded": "يتطلب إذن الكاميرا",
+  "cameraPermissionDescription": "تم رفض الوصول إلى الكاميرا بشكل دائم.\n\nيرجى تفعيله يدويًا من الإعدادات → الخصوصية → الكاميرا.",
+  "cancel": "إلغاء",
+  "openSettings": "فتح الإعدادات",
+  "cameraInitError": "حدث خطأ أثناء تشغيل الكاميرا:",
+  "noSecondaryCamera": "لم يتم العثور على كاميرا ثانية",
+  "switchCam": "تبديل الكاميرا"
+}
