@@ -40,4 +40,7 @@ flutter pub get
 flutter run
 ```
 
+## Documantation
 
+For detailed documentation, including publishing steps and app configuration, refer to the Confluence page:  
+[Split-Screen App Documentation](https://aseelnabeelrajab1.atlassian.net/wiki/external/N2FhYThmMGFlMjYwNDdmNmFmODA5MWJlNDA0MTE3MWY)
