@@ -20,6 +20,29 @@ class CameraView extends StatelessWidget {
     required this.onHideCamera,
     super.key,
   });
+  Widget _buildControlButton({
+    required IconData icon,
+    required VoidCallback onPressed,
+  }) {
+    return GestureDetector(
+      onTap: onPressed,
+      child: Container(
+        padding: EdgeInsets.all(10.w),
+        decoration: BoxDecoration(
+          color: Colors.black54,
+          shape: BoxShape.circle,
+          boxShadow: [
+            BoxShadow(
+              color: Colors.black26,
+              blurRadius: 4,
+              offset: Offset(2, 2),
+            ),
+          ],
+        ),
+        child: Icon(icon, color: Colors.white, size: 16.sp),
+      ),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -45,19 +68,13 @@ class CameraView extends StatelessWidget {
                         child: Row(
                           mainAxisSize: MainAxisSize.min,
                           children: [
-                            FloatingActionButton.small(
-                              heroTag: AppLocalizations.of(context)!.switchCam,
-                              onPressed: onSwitchCamera,
-                              backgroundColor: Colors.black54,
-                              child: const Icon(Icons.cameraswitch),
-                            ),
-                            // SizedBox(width: 5.w),
-                            FloatingActionButton.small(
-                              heroTag: AppLocalizations.of(context)!.hideCamera,
-                              onPressed: onHideCamera,
-                              backgroundColor: Colors.black54,
-                              child: const Icon(Icons.videocam_off),
-                            ),
+                            _buildControlButton(
+                                icon: Icons.cameraswitch,
+                                onPressed: onSwitchCamera),
+                            SizedBox(width: 15.w),
+                            _buildControlButton(
+                                icon: Icons.videocam_off,
+                                onPressed: onHideCamera),
                           ],
                         ),
                       ),
@@ -69,7 +86,7 @@ class CameraView extends StatelessWidget {
                 icon: Icon(Icons.videocam, size: 20.sp),
                 label: Text(
                   AppLocalizations.of(context)!.enableCamera,
-                  style: TextStyle(fontSize: 16.sp),
+                  style: TextStyle(fontSize: 12.sp),
                 ),
                 onPressed: () => onInitializeCamera(),
                 style: ElevatedButton.styleFrom(
