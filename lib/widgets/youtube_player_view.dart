@@ -8,10 +8,13 @@ class YoutubePlayerView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return YoutubePlayer(
-      controller: controller,
-      showVideoProgressIndicator: true,
-      progressIndicatorColor: Colors.redAccent,
+    return FittedBox(
+      fit: BoxFit.contain,
+      child: YoutubePlayer(
+        controller: controller,
+        showVideoProgressIndicator: true,
+        progressIndicatorColor: Colors.redAccent,
+      ),
     );
   }
 }
